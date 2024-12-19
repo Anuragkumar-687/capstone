@@ -108,9 +108,19 @@
     margin-bottom: 5px;
     color: #E6D8D6;
   }
+
+.caption h3:hover{
+  cursor: pointer;
+  color: violet;
+}
   
   .caption p {
     color:#E6D8D69E;
+  }
+
+  .caption p:hover{
+    cursor: pointer;
+    color: violet;
   }
   
   #footer {
