@@ -62,8 +62,8 @@
   }
   
   #main-container img {
-    width: 1400px;
-    height: 775px;
+    width: 100vw;
+  
     margin-top: 20px;
   }
   
@@ -236,3 +236,75 @@
   #end .right:hover {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 1024px) {
+  #gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+      font-size: 32px;
+  }
+  #main-container h1 {
+    font-size:70px;
+    width:90vw;
+  }
+ 
+}
+
+/* For screens smaller than or equal to 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .navbar .right a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    #gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .about {
+        font-size: 28px;
+    }
+    .btn {
+        width: 300px;
+    }
+}
+
+/* For screens smaller than or equal to 480px */
+@media screen and (max-width: 480px) {
+    #main-container h1 {
+        font-size: 48px;
+    }
+    .navbar .left {
+        font-size: 28px;
+    }
+    .navbar .right a {
+        font-size: 18px;
+    }
+    .about {
+        font-size: 24px;
+    }
+    .btn {
+        width: 250px;
+    }
+    .input input {
+        width: 25px;
+        height: 40px;
+    }
+}
